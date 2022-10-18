@@ -216,6 +216,14 @@ img {
 .profit {
   margin-top: -85px;
 
+  &__slogan {
+    display: none;
+  }
+
+  &__slogan-table {
+    display: none;
+  }
+
   &__banner {
     display: none;
   }

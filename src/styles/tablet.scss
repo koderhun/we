@@ -205,8 +205,95 @@
     background: linear-gradient(360deg, #14ad9f 3.8%, #55c4cb 47.73%, #425ca9 100%);
   }
 
+  .profit-slogan {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    max-width: 340px;
+
+    &__small {
+      font-size: 21px;
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    &__head {
+      font-size: 32px;
+      font-weight: bold;
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__right,
+    &__left {
+      width: calc(50% - 10px);
+    }
+
+    &__text {
+      font-size: 21px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    &__arrow {
+      width: 100%;
+
+      img {
+        margin: auto;
+        display: block;
+        max-width: 60px;
+        width: 100%;
+      }
+    }
+  }
+
   .profit {
     margin-top: 40px;
+
+    &__slogan-table {
+      display: block;
+
+      .profit-slogan {
+        max-width: 100%;
+
+        &__right {
+          justify-content: flex-start;
+        }
+
+        &__header {
+          padding-bottom: 20px;
+        }
+
+        &__text {
+          padding-bottom: 20px;
+        }
+
+        &__arrow {
+          max-width: 100%;
+          img {
+            display: block;
+            margin: auto;
+          }
+        }
+
+        &__small {
+          font-size: 40px;
+        }
+
+        &__head {
+          font-size: 40px;
+        }
+      }
+    }
 
     &__banner {
       display: block;
