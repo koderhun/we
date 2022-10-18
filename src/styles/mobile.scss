@@ -1,0 +1,181 @@
+@media (max-width: 769px) {
+  .join {
+    .title-large {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .aboutcard {
+    &__item {
+      max-width: 100%;
+    }
+  }
+
+  .joinrow {
+    width: auto;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .section-text {
+    &::before {
+      height: 90px;
+    }
+  }
+
+  .header {
+    &__logo-block {
+      width: 50px;
+    }
+
+    &__link {
+      font-size: 16px;
+    }
+
+    .container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &__left {
+      width: calc(100% - 45px);
+      justify-content: flex-start;
+    }
+  }
+
+  .menu {
+    flex-wrap: wrap;
+
+    &__link {
+      max-width: 150px;
+      width: 100%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .open > .header__menu {
+    padding: 80px 80px 20px 18px;
+  }
+
+  .aboutcard--comands {
+    .aboutcard__item {
+      max-width: 100%;
+    }
+
+    .aboutcard__text {
+      height: auto;
+    }
+  }
+
+  .banner {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__full-slogan {
+      &--tablet {
+        display: none;
+      }
+      &--mobile {
+        display: block;
+      }
+    }
+
+    &__arrow {
+      display: block;
+      margin: 40px auto;
+    }
+
+    &__slogan-arrow {
+      display: block;
+      padding: 40px 0;
+    }
+
+    &--scores,
+    &--rules,
+    &--event {
+      .banner__content {
+        align-items: center;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .slogan {
+    &__right {
+      display: none;
+    }
+
+    &__left {
+      padding-bottom: 40px;
+    }
+  }
+
+  .footer {
+    &__central {
+      flex-direction: column;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__menu-columns {
+      flex-direction: column;
+    }
+
+    &__logo {
+      max-width: 100%;
+      margin-right: 0;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 35px;
+
+      .social-block {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__logo-link {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+
+    &__item {
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__bottom {
+      .social-block {
+        display: none;
+      }
+    }
+
+    &__menu-columns {
+      padding-bottom: 0;
+    }
+
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .social-block {
+    .social-link {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
