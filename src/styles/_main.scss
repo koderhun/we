@@ -213,10 +213,18 @@ img {
   }
 }
 
+.videoblock {
+  max-width: 100%;
+}
+
 .profit {
   margin-top: -85px;
 
   &__slogan {
+    display: none;
+  }
+
+  &__arrow-mobile {
     display: none;
   }
 
@@ -746,7 +754,8 @@ section {
   overflow: hidden;
   padding: 3px;
 
-  &__bg {
+  &--bg::before {
+    content: '';
     position: absolute;
     top: -3px;
     right: -3px;

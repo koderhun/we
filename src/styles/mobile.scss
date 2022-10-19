@@ -5,6 +5,14 @@
       width: 100%;
     }
 
+    &__slogan {
+      display: block;
+    }
+
+    &__slogan-table {
+      display: none;
+    }
+
     &__item {
       max-width: 340px;
       margin-left: auto;
@@ -20,9 +28,20 @@
       margin-right: auto;
     }
 
+    &__arrow-mobile {
+      display: block;
+      width: 100%;
+      padding-bottom: 40px;
+
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
     .container {
       flex-direction: column;
     }
+    
   }
 
 
@@ -41,7 +60,7 @@
   }
 
   .joinrow {
-    width: auto;
+    width: 100%;
   }
 
   .subtitle {
@@ -204,6 +223,20 @@
     .social-link {
       width: 40px;
       height: 40px;
+    }
+  }
+}
+
+
+@media (max-width: 380px) {
+  .subscribe {
+    &__subheader {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .title {
+      font-size: 30px;
     }
   }
 }
