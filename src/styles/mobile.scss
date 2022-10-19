@@ -1,4 +1,4 @@
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .profit {
     &__slogan,
     &__list {
@@ -26,6 +26,13 @@
     &__banner {
       margin-left: auto;
       margin-right: auto;
+      width: 100%;
+      padding-left: 0;
+
+      img {
+        width: 100%;
+        max-width: 385px;
+      }
     }
 
     &__arrow-mobile {
@@ -41,10 +48,7 @@
     .container {
       flex-direction: column;
     }
-    
   }
-
-
 
   .join {
     .title-large {
@@ -226,7 +230,6 @@
     }
   }
 }
-
 
 @media (max-width: 380px) {
   .subscribe {
