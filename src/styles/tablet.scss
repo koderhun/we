@@ -23,6 +23,10 @@
         display: none;
       }
     }
+
+    &__links {
+      
+    }
   }
 
   .whoami--rules {
@@ -117,7 +121,7 @@
         display: block;
         font-size: 16px;
         font-weight: 400;
-        padding: 40px;
+        padding: 0 0 0 20px;
       }
     }
 
@@ -141,10 +145,32 @@
     display: block;
     background: transparent;
     border: 0;
+    transition: $transition;
 
-    &:hover,
+    &:hover {
+      &:before {
+        background-image: url($img + 'burger-hover.svg');
+      }
+    }
+
     &:focus {
-      opacity: 0.8;
+      &:before {
+        background-image: url($img + 'burger-focus.svg');
+      }
+    }
+
+    &.active,
+    &:active {
+      &:before {
+        background-image: url($img + 'burger-active.svg');
+      }
+    }
+
+    &:disabled,
+    &.disabled {
+      &:before {
+        background-image: url($img + 'burger-disabled.svg');
+      }
     }
 
     &::before {
@@ -159,12 +185,39 @@
 
   .close {
     &::before {
+      transition: $transition;
       display: block;
       content: '';
       width: 41px;
       height: 41px;
       background: url($img + 'close.svg') no-repeat center;
       background-size: contain;
+    }
+
+    &:hover {
+      &:before {
+        background-image: url($img + 'close-hover.svg');
+      }
+    }
+
+    &:focus {
+      &:before {
+        background-image: url($img + 'close-focus.svg');
+      }
+    }
+
+    &:active,
+    &.active {
+      &:before {
+        background-image: url($img + 'close-active.svg');
+      }
+    }
+
+    &:disabled,
+    &.disabled {
+      &:before {
+        background-image: url($img + 'close-disabled.svg');
+      }
     }
   }
 
@@ -442,7 +495,7 @@
   }
 
   .card-info {
-    padding: 40px;
+    padding: 18px;
     text-align: left;
 
     &.active {
@@ -450,12 +503,14 @@
     }
 
     &__picture {
-      min-width: 150px;
+      min-width: 0;
+      max-width: 70px;
+      width: 100%;
       padding-bottom: 0;
     }
 
     &__text {
-      padding-left: 40px;
+      padding: 20px 0 0 0;
     }
   }
 

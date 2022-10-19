@@ -1,0 +1,62 @@
+.list-none {
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+a {
+  &:hover {
+    border-color: $color-hover;
+    color: $color-hover;
+  }
+
+  &:focus {
+    border-color: $color-focus;
+    color: $color-focus;
+  }
+
+  &:active,
+  &.active {
+    border-color: $color-active;
+    color: $color-active;
+  }
+
+  &:disabled,
+  &.disabled {
+    border-color: $color-disabled;
+    color: $color-disabled;
+  }
+}
+
+.btn-app {
+  background: white;
+  border-bottom: 2px solid #213d5c96;
+  border-radius: 10px;
+  height: 56px;
+  width: 150px;
+  padding: 13px;
+  transition: all 0.3s ease;
+
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: #d3fff7;
+  }
+
+  &:focus {
+    background-color: #fabc13;
+  }
+
+  &:active,
+  &.active {
+    background-color: #bbfff9;
+  }
+
+  &:disabled,
+  &.disabled {
+    opacity: 0.5;
+  }
+}
