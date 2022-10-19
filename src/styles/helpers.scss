@@ -6,6 +6,7 @@
 }
 
 a {
+  transition: border, color 0.3s ease;
   &:hover {
     border-color: $color-hover;
     color: $color-hover;
@@ -26,6 +27,35 @@ a {
   &.disabled {
     border-color: $color-disabled;
     color: $color-disabled;
+  }
+}
+
+.black-links {
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      border-color: $color-hover;
+      color: $color-hover;
+    }
+
+    &:focus {
+      border-color: $color-focus;
+      color: $color-focus;
+    }
+
+    &:active,
+    &.active {
+      border-color: $color-active;
+      color: $color-active;
+    }
+
+    &:disabled,
+    &.disabled {
+      border-color: $color-disabled;
+      color: $color-disabled;
+    }
   }
 }
 

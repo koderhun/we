@@ -114,7 +114,7 @@
   }
 
   .open > .header__menu {
-    padding: 100px 80px 20px 18px;
+    padding: 100px 18px 20px 18px;
   }
 
   .aboutcard--comands {
@@ -172,6 +172,21 @@
     }
   }
 
+  .social-link {
+    &.social-link-ok {
+      &::before {
+        width: 16px;
+        height: 27px;
+      }
+    }
+
+    &.social-link-vk {
+      &::before {
+        width: 27px;
+        height: 16px;
+      }
+    }
+  }
 
   .footer {
     &__central {
@@ -207,6 +222,8 @@
 
     &__item {
       margin-bottom: 40px;
+      padding-left: 0;
+      width: auto;
     }
 
     &__title {

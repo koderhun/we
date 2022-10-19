@@ -22,7 +22,7 @@ img {
   }
 
   &__links {
-    margin-left: 30px;
+    margin-left: 20px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +36,7 @@ img {
 
   &__link {
     display: inline-block;
-    padding: 0 35px;
+    padding: 0 20px;
     color: white;
     text-decoration: none;
     font-size: 25px;
@@ -818,6 +818,7 @@ section {
   &__bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 25px;
   }
 
@@ -850,6 +851,13 @@ section {
     display: flex;
     flex-direction: column;
     max-width: 250px;
+    padding-left: 20px;
+    width: calc(33.33% - 20px);
+
+    &:first-child {
+      width: 33.33%;
+      padding-left: 0;
+    }
   }
 
   &__menu-link {
@@ -880,14 +888,7 @@ section {
 
   a {
     font-size: 15px;
-    color: white;
     font-weight: 500;
-
-    &:focus,
-    &:hover {
-      opacity: 0.9;
-      color: white;
-    }
   }
 }
 
