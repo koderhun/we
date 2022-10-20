@@ -1,0 +1,25 @@
+<svg width="336" height="142" viewBox="0 0 336 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_168_10206)">
+<circle cx="64" cy="155" r="85" fill="#1EBEA0"/>
+<circle cx="299" cy="54" r="101" fill="#ABFDED"/>
+<g filter="url(#filter0_b_168_10206)">
+<rect width="336" height="142" fill="white" fill-opacity="0.5"/>
+</g>
+</g>
+<rect x="1" y="1" width="334" height="140" rx="29" stroke="url(#paint0_linear_168_10206)" stroke-width="2"/>
+<defs>
+<filter id="filter0_b_168_10206" x="-80" y="-80" width="496" height="302" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="40"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_168_10206"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_168_10206" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_168_10206" x1="168" y1="0" x2="168" y2="142" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_168_10206">
+<rect width="336" height="142" rx="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>
