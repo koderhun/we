@@ -216,8 +216,10 @@ img {
 
 .videoblock {
   max-width: 100%;
+  width: 100%;
 
   iframe {
+    width: 100%;
     max-width: 100%;
   }
 }
@@ -659,10 +661,11 @@ img {
     border-radius: 30px;
     padding: 25px;
     border: 3px solid white;
-    max-width: 400px;
+    // max-width: 400px;
+    width: 100%;
     font-size: 17px;
     line-height: 21px;
-    min-height: 565px;
+    min-height: 560px;
     // margin: 0 10px;
   }
 
@@ -1251,5 +1254,6 @@ h4,
 .join {
   .title-large {
     font-size: 60px;
+    margin-bottom: 25px;
   }
 }

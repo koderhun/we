@@ -1,9 +1,16 @@
-.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
-	padding-left: 18px;
-	padding-right: 18px;
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.col-xl,
+.col-lg {
+  padding-left: 18px;
+  padding-right: 18px;
 }
-
 .row {
-	margin-left: -18px;
-	margin-right: -18px;
+  margin-left: -18px;
+  margin-right: -18px;
 }

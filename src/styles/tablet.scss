@@ -524,6 +524,8 @@
   }
 
   .rowcard {
+    margin-bottom: 60px;
+
     &__picture {
       margin-bottom: 60px;
       margin-right: 0;
@@ -560,7 +562,9 @@
 
     &__item {
       padding: 15px;
-      min-height: 430px;
+      min-height: 490px;
+      max-width: 100%;
+      width: 100%;
     }
   }
 
@@ -571,7 +575,6 @@
   }
 
   .joinrow {
-    width: 100%;
 
     &__link {
       max-width: 150px;
@@ -642,7 +645,6 @@
   }
 
   .joinrow {
-    width: 100%;
 
     &__apps {
       width: 100%;
@@ -675,5 +677,17 @@
     img {
       width: 100%;
     }
+  }
+
+  .join {
+    .title-large {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .rowcard {
+    align-items: center;
   }
 }
