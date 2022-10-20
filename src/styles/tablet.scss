@@ -133,7 +133,10 @@
 
     .card-list__text {
       font-size: 16px;
-      text-align: center;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -383,7 +386,7 @@
     &__banner {
       display: block;
       padding-bottom: 25px;
-      margin-top: -45px;
+      margin-top: -20px;
       width: 58%;
 
       img {
@@ -522,7 +525,8 @@
 
   .rowcard {
     &__picture {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
+      margin-right: 0;
     }
     &__content {
       padding-left: 0;
@@ -530,7 +534,7 @@
     &__title {
       font-size: 20px;
       line-height: 1.2;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
   }
 
@@ -564,10 +568,6 @@
     .subtitle {
       margin-bottom: 40px;
     }
-  }
-
-  .title-large {
-    font-size: 50px;
   }
 
   .joinrow {
@@ -643,10 +643,6 @@
 
   .joinrow {
     width: 100%;
-
-    &__link {
-      margin-right: 20px;
-    }
 
     &__apps {
       width: 100%;

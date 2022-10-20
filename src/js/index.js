@@ -26,12 +26,12 @@ const swiper = new Swiper('.swiper', {
     loop: false,
     slidesPerView: 1,
     autoplay: true,
-    spaceBetween: 20,
+    spaceBetween: 10,
     breakpoints: {
       // when window width is >= 640px
       769: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 10
       },
       
       990: {
