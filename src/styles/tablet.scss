@@ -575,7 +575,6 @@
   }
 
   .joinrow {
-
     &__link {
       max-width: 150px;
     }
@@ -645,9 +644,24 @@
   }
 
   .joinrow {
-
     &__apps {
       width: 100%;
+    }
+  }
+
+  .wsblock {
+    padding-top: 170px;
+    margin-top: -150px;
+    background-size: auto 332px;
+
+    &__title {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 51px;
+    }
+
+    &__header {
+      height: 162px;
     }
   }
 }

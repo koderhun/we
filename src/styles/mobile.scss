@@ -306,6 +306,26 @@
       padding-top: 40px;
     }
   }
+
+  .wsblock {
+    margin-top: -90px;
+    padding-top: 120px;
+    background-size: auto 220px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+
+    &__header {
+      height: 100px;
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 @media (max-width: 480px) {
