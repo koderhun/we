@@ -151,84 +151,47 @@
     }
   }
 
+  .close,
   .burger {
     display: block;
     background: transparent;
     border: 0;
     transition: $transition;
 
+    svg {
+      fill: #fff;
+      transition: $transition;
+    }
+
     &:hover {
-      &:before {
-        background-image: url($img + 'burger-hover.svg');
+      svg {
+        fill: $color-active;
       }
     }
 
     &:focus {
-      &:before {
-        background-image: url($img + 'burger-focus.svg');
+      svg {
+        fill: $color-focus;
       }
     }
 
-    &.active,
+    &.ac
     &:active {
-      &:before {
-        background-image: url($img + 'burger-active.svg');
+      svg {
+        fill: $color-active;
       }
     }
 
     &:disabled,
     &.disabled {
-      &:before {
-        background-image: url($img + 'burger-disabled.svg');
+      svg {
+        fill: $color-disabled;
       }
-    }
-
-    &::before {
-      display: block;
-      content: '';
-      width: 41px;
-      height: 25px;
-      background: url($img + 'burger.svg') no-repeat center;
-      background-size: 100% 100%;
     }
   }
 
   .close {
-    &::before {
-      transition: $transition;
-      display: block;
-      content: '';
-      width: 41px;
-      height: 41px;
-      background: url($img + 'close.svg') no-repeat center;
-      background-size: contain;
-    }
-
-    &:hover {
-      &:before {
-        background-image: url($img + 'close-hover.svg');
-      }
-    }
-
-    &:focus {
-      &:before {
-        background-image: url($img + 'close-focus.svg');
-      }
-    }
-
-    &:active,
-    &.active {
-      &:before {
-        background-image: url($img + 'close-active.svg');
-      }
-    }
-
-    &:disabled,
-    &.disabled {
-      &:before {
-        background-image: url($img + 'close-disabled.svg');
-      }
-    }
+    display: none;
   }
 
   .banner {
@@ -257,6 +220,15 @@
     &__picture {
       display: none;
     }
+
+    &--scores,
+    &--rules,
+    &--event {
+      .banner__picture {
+        right: -20px;
+      }
+    }
+
   }
 
   .prizes-block {
@@ -410,14 +382,14 @@
     &__item {
       padding-top: 50px;
       margin-bottom: 60px;
-      border: 0;
+      border-color: rgba(255, 255, 255, 0.7);
     }
 
     .container {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-    }
+    }   
   }
 
   section .container {
@@ -431,7 +403,7 @@
   }
 
   .whoami {
-    padding-top: 40px;
+    padding-top: 60px;
 
     &--rules {
       .container {
@@ -464,6 +436,24 @@
 
     .card-list {
       width: 100%;
+    
+      &__item {
+        .card-info {
+          &__text {
+            background-color: #F0FFFC;
+            padding: 40px 38px;
+          }
+        }
+      }
+
+      &__text {
+        font-weight: 700;
+        background-color: #F0FFFC;
+      }
+    }
+
+    .title-large {
+      margin-bottom: 60px;
     }
   }
 
@@ -482,7 +472,6 @@
       }
 
       &.active {
-        border-color: transparent;
         background: transparent;
         color: white;
 
@@ -645,6 +634,10 @@
       display: block;
       color: white;
       margin-bottom: 40px;
+    }
+
+    &__header {
+      margin-right: 0;
     }
 
     .title {
