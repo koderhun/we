@@ -48,10 +48,14 @@ img {
     }
   }
 
+  &__menu {
+    position: absolute;
+  }
+
   > .header__menu {
     position: absolute;
     transform: translateY(-170px);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     display: none;
   }
 }
@@ -1282,7 +1286,9 @@ h4,
     font-size: 60px;
     line-height: 1.2;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
   }
 
   > .container {
