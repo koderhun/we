@@ -20,15 +20,14 @@ buttons.forEach((btn) => {
 });
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // direction: 'vertical',
-  loop: false,
+  loop: true,
   slidesPerView: 1,
-  autoplay: true,
+  autoplay: {
+    delay: 5000,
+  },
   spaceBetween: 10,
 
   breakpoints: {
-    // when window width is >= 640px
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
@@ -39,22 +38,6 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 20,
     },
   },
-
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-
-  // // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
-
-  // // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
 });
 
 $('.burger, .close').on('click', () => {

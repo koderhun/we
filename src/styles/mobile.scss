@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: $media-mobile) {
   .profit {
     &__slogan,
     &__list {
@@ -369,6 +369,11 @@
         }
       }
     }
+  }
+
+  .title-large {
+    font-size: 40px;
+    font-weight: bold;
   }
 }
 

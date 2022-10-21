@@ -159,6 +159,13 @@ img {
     }
   }
 
+  &--index {
+    .banner__picture {
+      position: relative;
+      right: -15px;
+    }
+  }
+
   .container {
     padding-top: 0;
     padding-bottom: 0;
