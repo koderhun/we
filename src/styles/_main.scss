@@ -1240,18 +1240,22 @@ h4,
 }
 
 .wsblock {
-  margin-top: -180px;
-  padding-top: 220px;
-  background: linear-gradient(360deg, #14ad9f 3.8%, #55c4cb 47.73%, #425ca9 100%);
-  background-size: auto 572px;
-  background-repeat: no-repeat;
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
 
   &__header {
-    min-height: 353px;
     margin-bottom: 20px;
+    margin-top: -274px;
+    padding-top: 274px;
+    padding-bottom: 60px;
+    background: linear-gradient(360deg, #14ad9f 3.8%, #55c4cb 47.73%, #425ca9 100%);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    .container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   &__title {

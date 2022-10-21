@@ -659,17 +659,14 @@
   }
 
   .wsblock {
-    padding-top: 150px;
-    margin-top: -150px;
-    background-size: auto 332px;
-
     &__title {
       font-weight: 700;
       font-size: 34px;
     }
 
     &__header {
-      min-height: 162px;
+      padding-top: 170px;
+      margin-top: -170px;
       margin-bottom: 40px;
     }
   }
