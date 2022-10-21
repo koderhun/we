@@ -309,14 +309,14 @@
 
   .wsblock {
     margin-top: -90px;
-    padding-top: 120px;
+    padding-top: 90px;
     background-size: auto 220px;
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
 
     &__header {
-      height: 100px;
+      min-height: 100px;
     }
 
     &__title {
@@ -360,6 +360,14 @@
   .header {
     &__links {
       margin-left: 0;
+    }
+  }
+
+  .wsblock {
+    background-size: auto 280px;
+
+    &__header {
+      min-height: 200px;
     }
   }
 }

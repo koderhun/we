@@ -1264,7 +1264,7 @@ h4,
 
 .wsblock {
   margin-top: -180px;
-    padding-top: 220px;
+  padding-top: 220px;
   background: linear-gradient(360deg, #14ad9f 3.8%, #55c4cb 47.73%, #425ca9 100%);
   background-size: auto 572px;
   background-repeat: no-repeat;
@@ -1273,13 +1273,14 @@ h4,
   line-height: 25px;
 
   &__header {
-    height: 353px;
+    min-height: 353px;
+    margin-bottom: 20px;
   }
 
   &__title {
     font-weight: 700;
-font-size: 90px;
-line-height: 109px;
+    font-size: 60px;
+    line-height: 1.2;
     color: white;
     margin-bottom: 40px;
   }

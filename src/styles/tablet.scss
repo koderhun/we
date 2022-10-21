@@ -650,18 +650,18 @@
   }
 
   .wsblock {
-    padding-top: 170px;
+    padding-top: 150px;
     margin-top: -150px;
     background-size: auto 332px;
 
     &__title {
       font-weight: 700;
-      font-size: 42px;
-      line-height: 51px;
+      font-size: 34px;
     }
 
     &__header {
-      height: 162px;
+      min-height: 162px;
+      margin-bottom: 40px;
     }
   }
 }
