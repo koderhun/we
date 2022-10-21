@@ -49,7 +49,7 @@ img {
   }
 
   &__menu {
-    position: absolute;
+    position: relative;
   }
 
   > .header__menu {
@@ -319,53 +319,47 @@ img {
 
 .link-arrow {
   color: $link-blue;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
-  // transition: $transition;
+  transition: $transition;
   text-decoration: none;
+
+  svg {
+    width: 15px;
+    height: 15px;
+    fill: $link-blue;
+    margin-left: 15px;
+  }
 
   &:hover {
     color: white;
-
-    &::after {
-      background-image: url($img + 'link-arrow-hover.svg');
+    text-decoration: none;
+    svg {
+      fill: #fff;
     }
   }
 
   &:focus {
     color: #ff8227;
-
-    &::after {
-      background-image: url($img + 'link-arrow-focus.svg');
+    svg {
+      fill: #ff8227;
     }
   }
 
   &:active,
   &.active {
     color: $link-arrow-hover;
-
-    &::after {
-      background-image: url($img + 'link-arrow-hover.svg');
+    svg {
+      fill: $link-arrow-hover;
     }
   }
 
   &.disabled,
   &:disabled {
     color: #8c8c8c;
-
-    &::after {
-      background-image: url($img + 'link-arrow-disabled.svg');
+    svg {
+      fill: #8c8c8c;
     }
-  }
-
-  &::after {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    background: url($img + 'link-arrow.svg') no-repeat center;
-    background-size: contain;
-    margin-left: 15px;
   }
 }
 
@@ -605,6 +599,7 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 0;
   display: none;
 
   &.active {
@@ -973,61 +968,39 @@ section {
   border-radius: 12px;
   transition: $transition;
 
-  &.social-link-ok {
-    &:hover {
-      &:before {
-        background-image: url($img + 'ok-black.svg');
-      }
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 20px;
-      height: 34px;
-      background-image: url($img + 'ok.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
-    }
-  }
-
-  &.social-link-vk {
-    &:hover {
-      &:before {
-        background-image: url($img + 'vk-black.svg');
-      }
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 34px;
-      height: 21px;
-      background-image: url($img + 'vk.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
-    }
+  svg {
+    fill: #fff;
+    transition: $transition;
   }
 
   &:hover {
-    background-color: $color-hover;
+    background-color: #fff;
+    svg {
+      fill: #000;
+    }
   }
 
   &:focus {
     background-color: $color-focus;
+    svg {
+      fill: #fff;
+    }
   }
 
   &:active,
   &.active {
     background-color: $color-active;
+    svg {
+      fill: #fff;
+    }
   }
 
   &:disabled,
   &.disabled {
     background-color: $color-disabled;
+    svg {
+      fill: #fff;
+    }
   }
 
   &:last-child {
