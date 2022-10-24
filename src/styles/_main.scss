@@ -81,6 +81,7 @@ img {
   }
 
   &__full-slogan {
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -92,6 +93,12 @@ img {
     &--mobile,
     &--tablet {
       display: none;
+    }
+
+    .arrow-one {
+      position: absolute;
+      right: 26%;
+      bottom: 0;
     }
   }
 
@@ -297,11 +304,11 @@ img {
       cursor: not-allowed;
       .link-arrow {
         transition: all 0.2s ease;
-        color: #8C8C8C;
+        color: #8c8c8c;
 
         svg {
           transition: all 0.2s ease;
-          fill: #8C8C8C;
+          fill: #8c8c8c;
         }
       }
     }

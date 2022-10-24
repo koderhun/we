@@ -365,6 +365,17 @@
     }
   }
 
+  .eventitem {
+    &__picture {
+      max-width: 280px;
+      width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
   .card-info {
     &__picture {
       min-width: 70px;
