@@ -1,4 +1,14 @@
 @media (max-width: $media-mobile) {
+  .aboutcard {
+    &__text {
+      line-height: 1.2;
+    }
+  }
+
+  .subtitle {
+    line-height: 1.2;
+  }
+
   .profit {
     &__slogan,
     &__list {
@@ -352,6 +362,12 @@
       font-size: 15px;
       line-height: 1.2;
       border-radius: 10px;
+    }
+  }
+
+  .card-info {
+    &__picture {
+      min-width: 70px;
     }
   }
 
