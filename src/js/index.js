@@ -44,8 +44,3 @@ $('.burger, .close').on('click', () => {
   $('.header').toggleClass('open');
 });
 
-new Tippy('.type', {
-  animation: 'scale',
-  arrow: 'true',
-  theme: 'light',
-});

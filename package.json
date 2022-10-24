@@ -67,7 +67,6 @@
     "gulp-sass": "^5.0.0",
     "jquery": "^3.5.1",
     "swiper": "^8.4.2",
-    "tippy.js": "^6.3.7"
   },
   "lint-staged": {
     "!(_*).scss": [

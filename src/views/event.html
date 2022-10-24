@@ -2,6 +2,24 @@
 <html lang="ru">
   @@include("./template/head.html")
   <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/animations/scale.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/animations/scale-extreme.min.css"
+    />
+
+    <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/tippy.js@6/themes/light.css" 
+  />
+
     @@include("./template/header.html")
     <div class="banner banner--event">
       <div class="container">
@@ -135,5 +153,13 @@
     </section>
     @@include("./template/subscribe.html") @@include("./template/footer.html")
     @@include("./template/scripts.html")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.umd.min.js"></script>
+    <script>
+      tippy('.type', {
+        theme: 'light',
+        allowHTML: true,
+      });
+    </script>
   </body>
 </html>

@@ -1,6 +1,4 @@
 @import "../../node_modules/swiper/swiper.scss";
-@import "../../node_modules/tippy.js/dist/svg-arrow.css";
-@import "../../node_modules/tippy.js/dist/tippy.css";
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
@@ -8,6 +6,7 @@
 @import "fonts";
 @import "tooltip";
 
+@import "helpers/arrow-one";
 @import "my-bs";
 @import "helpers";
 @import "main";

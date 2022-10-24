@@ -12,7 +12,11 @@
               style="background-image: url('./img/slogan-full.svg')"
             ></div>
             <div class="banner__picture">
-              <img src="./img/phone1.png" alt="screenshot" />
+              <img
+                src="./img/phone1.png"
+                srcset="./img/phone1-2x.png 2x"
+                alt="Скриншот главного экрана"
+              />
             </div>
           </div>
         </div>
@@ -120,11 +124,15 @@
           </ul>
 
           <div class="profit__banner">
-            <img src="./img/phone1.png" alt="Главный экран приложения" />
+            <img
+              src="./img/phone1.png"
+              srcset="./img/phone1-2x.png 2x"
+              alt="Скриншот главного экрана"
+            />
           </div>
 
           <div class="profit__arrow-mobile">
-            <img src="./img/banner-arrow.svg" alt="Arrow down" />
+            @@include("./template/arrow-one.html")
           </div>
         </div>
       </div>

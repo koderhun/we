@@ -1,0 +1,45 @@
+.arrow-one {
+  max-width: 50px;
+
+  svg {
+    fill: #fff;
+  }
+}
+
+.arrow-one-1,
+.arrow-one-2,
+.arrow-one-3,
+.arrow-one-4 {
+  margin-top: -13px;
+  animation: slide 4s linear infinite;
+	transition: opacity .2s ease;
+}
+
+.arrow-one-3 {
+  margin-top: -5px;
+}
+
+.arrow-one-1 {
+  animation-delay: 1s;
+}
+.arrow-one-2 {
+  animation-delay: 2s;
+}
+.arrow-one-3 {
+  animation-delay: 3s;
+}
+.arrow-one-4 {
+  animation-delay: 4s;
+}
+
+@keyframes slide {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
