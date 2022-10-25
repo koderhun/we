@@ -33,6 +33,11 @@ const paths = {
     dist: './dist/fonts/',
     watch: './src/fonts/**/*.{woff,woff2}',
   },
+  libs: {
+    src: './src/libs/**/*',
+    dist: './dist/libs/',
+    watch: './src/libs/**/*',
+  },
   favicons: {
     src: './src/img/favicon/favicon.png',
     dist: './dist/img/favicons/',
@@ -54,14 +59,14 @@ export { paths };
 export const development = gulp.series(
   'clean',
   'views',
-  gulp.parallel(['styles', 'scripts', 'images', 'webp', 'fonts', 'favicons']),
+  gulp.parallel(['styles', 'scripts', 'images', 'webp', 'fonts', 'favicons', 'libs']),
   gulp.parallel('serve'),
 );
 
 export const prod = gulp.series(
   'clean',
   'views',
-  gulp.parallel(['styles', 'scripts', 'images', 'webp', 'fonts', 'favicons', 'gzip']),
+  gulp.parallel(['styles', 'scripts', 'images', 'webp', 'fonts', 'favicons', 'libs', 'gzip']),
 );
 
 export default development;

@@ -2,23 +2,7 @@
 <html lang="ru">
   @@include("./template/head.html")
   <body>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/animations/scale.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/animations/scale-extreme.min.css"
-    />
-
-    <link 
-    rel="stylesheet" 
-    href="https://unpkg.com/tippy.js@6/themes/light.css" 
-  />
+    <link rel="stylesheet" href="./libs/tippyjs/light.css" />
 
     @@include("./template/header.html")
     <div class="banner banner--event">
@@ -35,9 +19,7 @@
                   или сам принимай участие в проектах, приглашай друзей и знакомых.
                 </div>
               </div>
-              <div class="slogan__right">
-                @@include("./template/arrow-one.html")
-              </div>
+              <div class="slogan__right">@@include("./template/arrow-one.html")</div>
             </div>
           </div>
           <div class="banner__picture">
@@ -64,7 +46,12 @@
               <div class="events-block__content">
                 <div class="eventitem">
                   <div class="eventitem__picture">
-                    <img srcset="./img/event-1-2x.png 2x"  src="./img/event-1.png" alt="Нажимаем кнопку «Создать»" class="" />
+                    <img
+                      srcset="./img/event-1-2x.png 2x"
+                      src="./img/event-1.png"
+                      alt="Нажимаем кнопку «Создать»"
+                      class=""
+                    />
                   </div>
                   <div class="eventitem__content">
                     <h4 class="eventitem__title">Нажимаем кнопку «Создать»</h4>
@@ -76,7 +63,12 @@
 
                 <div class="eventitem">
                   <div class="eventitem__picture">
-                    <img srcset="./img/event-2-2x.png 2x" src="./img/event-2.png" alt="Выбираем «Событие»" class="" />
+                    <img
+                      srcset="./img/event-2-2x.png 2x"
+                      src="./img/event-2.png"
+                      alt="Выбираем «Событие»"
+                      class=""
+                    />
                   </div>
                   <div class="eventitem__content">
                     <h4 class="eventitem__title">Выбираем «Событие»</h4>
@@ -88,7 +80,12 @@
 
                 <div class="eventitem">
                   <div class="eventitem__picture">
-                    <img srcset="./img/event-3-2x.png 2x" src="./img/event-3.png" alt="Заполняем нужные поля" class="" />
+                    <img
+                      srcset="./img/event-3-2x.png 2x"
+                      src="./img/event-3.png"
+                      alt="Заполняем нужные поля"
+                      class=""
+                    />
                   </div>
                   <div class="eventitem__content">
                     <h4 class="eventitem__title">Заполняем нужные поля</h4>
@@ -97,7 +94,12 @@
 
                 <div class="eventitem">
                   <div class="eventitem__picture">
-                    <img srcset="./img/event-4-2x.png 2x" src="./img/event-4.png" alt="Нажмите кноаку «Создать»" class="" />
+                    <img
+                      srcset="./img/event-4-2x.png 2x"
+                      src="./img/event-4.png"
+                      alt="Нажмите кноаку «Создать»"
+                      class=""
+                    />
                   </div>
                   <div class="eventitem__content">
                     <h4 class="eventitem__title">Нажмите кноаку «Создать»</h4>
@@ -153,8 +155,8 @@
     </section>
     @@include("./template/subscribe.html") @@include("./template/footer.html")
     @@include("./template/scripts.html")
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.4/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.umd.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
       tippy('.type', {
         theme: 'light',
