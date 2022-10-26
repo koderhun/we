@@ -195,18 +195,9 @@
 
   .social-link {
     border-radius: 6px;
-    &.social-link-ok {
-      &::before {
-        width: 16px;
-        height: 27px;
-      }
-    }
 
-    &.social-link-vk {
-      &::before {
-        width: 27px;
-        height: 16px;
-      }
+    svg {
+      transform: scale(0.7);
     }
   }
 
@@ -404,6 +395,8 @@
     font-size: 40px;
     font-weight: bold;
   }
+
+  
 }
 
 @media (max-width: 480px) {
