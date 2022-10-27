@@ -5,6 +5,15 @@
     }
   }
 
+  .scores-block {
+    &__picture {
+      > img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
   .subtitle {
     line-height: 1.2;
   }

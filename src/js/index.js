@@ -46,4 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.burger, .close').on('click', () => {
     $('.header').toggleClass('open');
   });
+
+  $('a[href="./' + location.pathname.split('/')[1] + '"]').addClass(
+    'active',
+  );
 });

@@ -17,9 +17,7 @@
                 </div>
                 <div class="slogan__text">Как получить баллы в рейтинг</div>
               </div>
-              <div class="slogan__right">
-                <div class="slogan__arrow"></div>
-              </div>
+              <div class="slogan__right">@@include("./template/arrow-one.html")</div>
             </div>
           </div>
           <div class="banner__picture">
@@ -33,14 +31,127 @@
       <div class="container">
         <h2 class="title title-medium text-success">Личный рейтинг</h2>
         <small class="subtitle subtitle-medium">
-          <p>В этом рейтинге участвуют все пользователи,</p>
-          <p>зарегистрированные в приложении "МЫ".</p>
-          <p>Итоги подводятся ежемесячно.</p>
+          В этом рейтинге участвуют все пользователи, <br />
+          зарегистрированные в приложении "МЫ". <br />
+          Итоги подводятся ежемесячно.
         </small>
       </div>
       <div class="scores-block">
         <div class="container">
-          <div class="row aboutcard aboutcard--comand aboutcard--scores">
+          <div class="row aboutcard aboutcard--comand aboutcard--scores aboutcard--mobile">
+            <div class="col-md scores-block__cards">
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img
+                      class="circle__picture"
+                      src="./img/scores-1.png"
+                      alt="30 баллов за регистрацию в приложении"
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">30 баллов за регистрацию в приложении</div>
+                <div class="aboutcard__text">
+                  Достаточно просто скачать приложение и зарегистрироваться
+                </div>
+              </div>
+
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img
+                      class="circle__picture"
+                      src="./img/scores-2.png"
+                      alt="30 баллов за приглашение друга"
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">30 баллов за приглашение друга</div>
+                <div class="aboutcard__text">
+                  Регистрация в приложении приглашенного тобой пользователя по твоему
+                  коду-приглашению, после этого ты будешь получать 30% от заработанных другом баллов
+                </div>
+              </div>
+
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img
+                      class="circle__picture"
+                      src="./img/scores-3.png"
+                      alt="1 балл за создание события"
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">1 балл за создание события</div>
+                <div class="aboutcard__text">
+                  Создавай события и получай баллы за каждое созданное событие
+                </div>
+              </div>
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img
+                      class="circle__picture"
+                      src="./img/scores-5.svg"
+                      alt="5 баллов за отчет в"
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">
+                  5 баллов за отчет в <br />
+                  событии с тегом: "Участвуй"
+                </div>
+                <div class="aboutcard__text">
+                  Отправляй отчеты в событиях категории "Участвуй" и получай баллы за каждый отчет
+                </div>
+              </div>
+            </div>
+            <div class="col-md scores-block__picture">
+              <img src="./img/screen-human.png" alt="Экран рейтинга участников" />
+
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img class="circle__picture" src="./img/scores-4.svg" alt="" />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">
+                  10 баллов за отчет в событии <br />
+                  с тегом: "Сделай"
+                </div>
+                <div class="aboutcard__text">
+                  Отправляй отчеты в событиях категории "Сделай" и получай баллы за каждый отчет
+                </div>
+              </div>
+
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img
+                      class="circle__picture"
+                      src="./img/scores-6.png"
+                      alt="2 балла за отчет в событии с тегом: 'Расскажи'"
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">
+                  2 балла за отчет в <br />
+                  событии с тегом: "Расскажи"
+                </div>
+                <div class="aboutcard__text">
+                  Отправляй отчеты в событиях категории "Расскажи" и получай баллы за каждый отчет
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row aboutcard aboutcard--comand aboutcard--scores aboutcard--desktop">
             <div class="col-lg">
               <div class="aboutcard__item">
                 <div class="aboutcard__picture">
@@ -173,7 +284,91 @@
       </div>
       <div class="scores-block">
         <div class="container">
-          <div class="row aboutcard aboutcard--comand aboutcard--scores">
+          <div class="row aboutcard aboutcard--comand aboutcard--scores aboutcard--mobile">
+            <div class="col-md scores-block__cards">
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img
+                      class="circle__picture"
+                      src="./img/scores-4.svg"
+                      alt='10 баллов за отчет в событии "Сделай" твоей команды'
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">
+                  10 баллов за отчет в событии "Сделай" твоей команды
+                </div>
+                <div class="aboutcard__text">
+                  Пользователь выложил отчет в событии вашей команды в категории "Сделай"
+                </div>
+              </div>
+
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img
+                      class="circle__picture"
+                      src="./img/scores-5.svg"
+                      alt='5 баллов за отчет в событии "Участвуй" твоей команды'
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">
+                  5 баллов за отчет в событии "Участвуй" твоей команды
+                </div>
+                <div class="aboutcard__text">
+                  Пользователь выложил отчет в событии вашей команды в категории "Участвуй"
+                </div>
+              </div>
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img
+                      class="circle__picture"
+                      src="./img/scores-6.svg"
+                      alt='2 балла за отчет в событии "Расскажи" твоей команды'
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">
+                  2 балла за отчет в событии <br />
+                  "Расскажи" твоей команды
+                </div>
+                <div class="aboutcard__text">
+                  Пользователь выложил отчет в событии вашей команды в категории "Расскажи"
+                </div>
+              </div>
+            </div>
+            <div class="col-md scores-block__picture">
+              <img src="./img/img_band.png" alt="Экран команды" />
+
+              <div class="aboutcard__item">
+                <div class="aboutcard__picture">
+                  <div class="circle">
+                    <img
+                      class="circle__picture"
+                      src="./img/scores-2.svg"
+                      alt="10% от баллов, полученных участником вашей команды за отчет в событии другой
+                  команды"
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutcard__name">
+                  10% от баллов, полученных участником вашей команды за отчет в событии другой
+                  команды
+                </div>
+                <div class="aboutcard__text">
+                  Участник вашей команды принял участие и выложил отчет в проекте другой команды
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row aboutcard aboutcard--comand aboutcard--scores aboutcard--desktop">
             <div class="col-lg blabla">
               <div class="aboutcard__item">
                 <div class="aboutcard__picture">
