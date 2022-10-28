@@ -1,7 +1,26 @@
 @media (max-width: $media-mobile) {
+  .mobile-show {
+    display: block;
+  }
+
+  .event-section--scores {
+    padding-bottom: 20px;
+
+    .subtitle {
+      line-height: 1.2;
+      br {
+        display: none;
+      }
+    }
+  }
+
   .aboutcard {
     &__text {
       line-height: 1.2;
+    }
+
+    &--scores {
+      flex-direction: column-reverse;
     }
   }
 
@@ -188,6 +207,15 @@
     &--event {
       .banner__picture {
         right: 0;
+      }
+    }
+
+    &--scores {
+      padding-bottom: 0;
+      
+      .arrow-one {
+        margin-top: 50px;
+        margin-bottom: 50px;
       }
     }
   }
